@@ -53,3 +53,18 @@ nav {
     flex-direction: column;
     justify-content: center;
 }
+
+.project {
+    font-size: 14px;
+    padding: 5%;
+    border: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
+}
+
+.project:hover {
+    background-color: rgb(245, 245, 245);
+}
