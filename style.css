@@ -68,3 +68,17 @@ nav {
 .project:hover {
     background-color: rgb(245, 245, 245);
 }
+
+.created-projects-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.created-projects-title {
+    font-weight: 600;
+    color: rgb(129, 129, 129);
+}
+
+.header-buttons {
+    display: flex;
+}
