@@ -1,1 +1,33 @@
 @import url(reset.css);
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+    height: 5%;
+    background-color: rgb(219, 76, 63);
+}
+
+.functionality-button {
+    width: 50px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+#toggle-menu-button {
+    fill: white;
+}
+
+.profile-picture {
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
