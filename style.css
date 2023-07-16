@@ -47,3 +47,9 @@ nav {
     -webkit-box-shadow: 6px -1px 5px 0px rgba(0,0,0,0.03);
     -moz-box-shadow: 6px -1px 5px 0px rgba(0,0,0,0.03);
 }
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
