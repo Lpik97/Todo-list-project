@@ -54,7 +54,8 @@ nav {
     justify-content: center;
 }
 
-.project {
+.project,
+.created-projects-header {
     font-size: 14px;
     padding: 5%;
     border: none;
@@ -65,13 +66,14 @@ nav {
     transition: background-color .2s ease-in-out;
 }
 
-.project:hover {
-    background-color: rgb(245, 245, 245);
-}
-
 .created-projects-header {
     display: flex;
     justify-content: space-between;
+}
+
+.project:hover,
+.created-projects-header:hover {
+    background-color: rgb(245, 245, 245);
 }
 
 .created-projects-title {
