@@ -56,13 +56,10 @@ nav {
 
 .project,
 .created-projects-header {
-    font-size: 14px;
-    padding: 5%;
     border: none;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
-    cursor: pointer;
     transition: background-color .2s ease-in-out;
 }
 
@@ -78,7 +75,6 @@ nav {
 
 .created-projects-title {
     font-weight: 600;
-    color: rgb(129, 129, 129);
 }
 
 .header-buttons {
