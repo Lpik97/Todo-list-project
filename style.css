@@ -71,6 +71,8 @@ nav {
 .created-projects-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 1.19%;
 }
 
 .project:hover,
