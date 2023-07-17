@@ -88,3 +88,14 @@ nav {
 .header-buttons {
     display: flex;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5%;
+    font-size: 18px;
+    gap: 10px;
+    background-color: rgb(65, 65, 65);
+    color: white;
+}
