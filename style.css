@@ -54,6 +54,11 @@ nav {
     justify-content: center;
 }
 
+.project {
+    padding: 5%;
+    cursor: pointer;
+}
+
 .project,
 .created-projects-header {
     border: none;
