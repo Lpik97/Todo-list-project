@@ -103,3 +103,11 @@ footer {
     background-color: rgb(65, 65, 65);
     color: white;
 }
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 30px;
+    padding: 2% 20%;
+}
