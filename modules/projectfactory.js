@@ -1,6 +1,11 @@
 const PROJECT_FACTORY = (title) => {
 
-    return { title };
+    return { 
+
+        title,
+        TODOS: [],
+        
+    };
     
 };
 
