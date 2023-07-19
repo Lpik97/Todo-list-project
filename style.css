@@ -111,3 +111,14 @@ footer {
     gap: 30px;
     padding: 2% 20%;
 }
+
+.project-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 2.5%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(193, 193, 193);
+}
