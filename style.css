@@ -127,3 +127,10 @@ footer {
     font-size: 18px;
     font-weight: 600;
 }
+
+.project-form .interactive-inputs {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    gap: 20px;
+}
