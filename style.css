@@ -112,7 +112,8 @@ footer {
     padding: 2% 20%;
 }
 
-.todo-form {
+.todo-form,
+.project-form {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -123,7 +124,8 @@ footer {
     border: 1px solid rgb(193, 193, 193);
 }
 
-.todo-form #title {
+.todo-form #title,
+.project-form #title {
     font-size: 18px;
     font-weight: 600;
 }
@@ -158,12 +160,14 @@ footer {
     transition: background-color .2s ease-in-out;
 }
 
-.todo-form .buttons-area {
+.todo-form .buttons-area,
+.project-form .buttons-area {
     display: flex;
     gap: 10px;
 }
 
-.todo-form .interactive-button {
+.todo-form .interactive-button,
+.project-form .interactive-button {
     height: 30px;
     font-size: 18px;
     font-weight: 600;
@@ -173,7 +177,8 @@ footer {
     border: none;
 }
 
-#add-todo-button {
+#add-todo-button,
+#add-project-button {
     color: white;
     cursor: not-allowed;
     background-color: rgb(242, 162, 155);
