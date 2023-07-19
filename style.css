@@ -183,3 +183,11 @@ footer {
     background-color: rgb(239, 239, 239);
     transition: background-color .2s ease-in-out;
 }
+
+.current-project-display:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+#cancel-button:hover {
+    background-color: rgb(226, 226, 226);
+}
