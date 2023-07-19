@@ -150,3 +150,10 @@ footer {
     display: flex;
     justify-content: space-between;
 }
+
+.current-project-display {
+    width: 75px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color .2s ease-in-out;
+}
