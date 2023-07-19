@@ -35,12 +35,16 @@ header {
     cursor: pointer;
 }
 
+main {
+    display: flex;
+    height: 100%;
+}
+
 nav {
     display: flex;
     flex-direction: column;
     padding: 2%;
     width: 13%;
-    height: 100%;
     gap: 4%;
     background-color: rgb(251, 251, 251);
     box-shadow: 6px -1px 5px 0px rgba(0,0,0,0.03);
