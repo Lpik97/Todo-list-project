@@ -112,7 +112,7 @@ footer {
     padding: 2% 20%;
 }
 
-.project-form {
+.todo-form {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -123,30 +123,30 @@ footer {
     border: 1px solid rgb(193, 193, 193);
 }
 
-.project-form #title {
+.todo-form #title {
     font-size: 18px;
     font-weight: 600;
 }
 
-.project-form .interactive-inputs {
+.todo-form .interactive-inputs {
     display: flex;
     align-items: center;
     margin-top: 10px;
     gap: 20px;
 }
 
-.project-form hr {
+.todo-form hr {
     margin: 15px 0;
     width: 100%;
 }
 
-.project-form legend {
+.todo-form legend {
     font-size: 16px;
     margin-bottom: 5px;
     color: rgb(125, 125, 121);
 }
 
-.project-form .lower-form {
+.todo-form .lower-form {
     display: flex;
     justify-content: space-between;
 }
@@ -158,12 +158,12 @@ footer {
     transition: background-color .2s ease-in-out;
 }
 
-.project-form .buttons-area {
+.todo-form .buttons-area {
     display: flex;
     gap: 10px;
 }
 
-.project-form .interactive-button {
+.todo-form .interactive-button {
     height: 30px;
     font-size: 18px;
     font-weight: 600;
