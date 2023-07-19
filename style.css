@@ -196,3 +196,13 @@ footer {
 #cancel-button:hover {
     background-color: rgb(226, 226, 226);
 }
+
+.project-form hr {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.project-form .lower-form {
+    display: flex;
+    justify-content: flex-end;
+}
