@@ -145,3 +145,8 @@ footer {
     margin-bottom: 5px;
     color: rgb(125, 125, 121);
 }
+
+.project-form .lower-form {
+    display: flex;
+    justify-content: space-between;
+}
