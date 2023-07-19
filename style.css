@@ -134,3 +134,8 @@ footer {
     margin-top: 10px;
     gap: 20px;
 }
+
+.project-form hr {
+    margin: 15px 0;
+    width: 100%;
+}
