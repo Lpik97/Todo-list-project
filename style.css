@@ -172,3 +172,14 @@ footer {
     cursor: pointer;
     border: none;
 }
+
+#add-todo-button {
+    color: white;
+    cursor: not-allowed;
+    background-color: rgb(242, 162, 155);
+}
+
+#cancel-button {
+    background-color: rgb(239, 239, 239);
+    transition: background-color .2s ease-in-out;
+}
