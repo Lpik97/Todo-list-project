@@ -18,6 +18,8 @@ const DISPLAY_PROJECT = () => {
 
         });
 
+        CREATED_PROJECTS.appendChild(PROJECT_ELEMENT);
+
     });
 
 };
