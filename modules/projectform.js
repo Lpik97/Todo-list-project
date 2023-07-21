@@ -6,7 +6,7 @@ const PROJECT_FORM = () => {
 
     ADD_PROJECT.addEventListener('click', () => {
 
-        const LOWER_MAIN_SECTION = document.querySelector('.lower-content');
+        const LOWER_CONTENT = document.querySelector('.lower-content');
 
         const FORM = document.createElement('form');
 
@@ -23,7 +23,7 @@ const PROJECT_FORM = () => {
         </form>
         `;
 
-        LOWER_MAIN_SECTION.appendChild(FORM);
+        LOWER_CONTENT.appendChild(FORM);
 
         FORM.classList.add('project-form');
 
