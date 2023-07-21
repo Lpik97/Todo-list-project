@@ -1,3 +1,5 @@
+import HANDLE_SUBMIT from "./handlesubmit.js";
+
 const PROJECT_FORM = () => {
 
     const ADD_PROJECT = document.getElementById('add-project');
@@ -24,6 +26,8 @@ const PROJECT_FORM = () => {
         LOWER_MAIN_SECTION.appendChild(FORM);
 
         FORM.classList.add('project-form');
+
+        HANDLE_SUBMIT(FORM);
 
     });
 
