@@ -1,4 +1,4 @@
-import HANDLE_SUBMIT from "./handlesubmit.js";
+import HANDLE_PROJECT_SUBMIT from "./handleprojectsubmit.js";
 
 const PROJECT_FORM = () => {
 
@@ -27,7 +27,7 @@ const PROJECT_FORM = () => {
 
         FORM.classList.add('project-form');
 
-        HANDLE_SUBMIT(FORM);
+        HANDLE_PROJECT_SUBMIT(FORM);
 
     });
 
