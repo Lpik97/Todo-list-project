@@ -1,7 +1,3 @@
-const PROJECTS_ARRAY = {
-
-    PROJECTS: [],
-
-};
+const PROJECTS_ARRAY =  [];
 
 export default PROJECTS_ARRAY;
