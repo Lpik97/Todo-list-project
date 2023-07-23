@@ -1,4 +1,4 @@
-const ADD_NEW_TODO = (TODO) => {
+const ADD_NEW_TODO = (PROJECT, TODO) => {
 
     const TODOS_ARRAY = PROJECT.TODOS;
 
