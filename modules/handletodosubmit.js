@@ -1,5 +1,4 @@
 import ADD_NEW_TODO from "./addnewtodo.js";
-import DISPLAY_TODO from "./displaytodo.js";
 import TODO_FACTORY from "./todofactory.js";
 
 function HANDLE_TODO_SUBMIT(FORM) {
@@ -19,8 +18,6 @@ function HANDLE_TODO_SUBMIT(FORM) {
         const NEW_TODO = TODO_FACTORY(TODO_TITLE, TODO_DESCRIPTION, TODO_DUE_DATE, TODO_PRIORITY);
 
         ADD_NEW_TODO(NEW_TODO);
-
-        DISPLAY_TODO();
 
     });
 
