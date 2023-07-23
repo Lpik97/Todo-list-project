@@ -9,7 +9,7 @@ const DISPLAY_PROJECT = () => {
 
     PROJECTS_ARRAY.forEach(PROJECT => {
 
-        const PROJECT_ELEMENT = document.createElement('div');
+        const PROJECT_ELEMENT = document.createElement('li');
 
         PROJECT_ELEMENT.innerText = PROJECT.title;
 
