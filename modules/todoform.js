@@ -1,47 +1,47 @@
+import HANDLE_TODO_SUBMIT from "./handletodosubmit.js";
+
 const TODO_FORM = () => {
 
-    const ADD_PROJECT_BUTTON = document.getElementById('add-project-button');
+    const LOWER_MAIN_SECTION = document.querySelector('.lower-content');
 
-    ADD_PROJECT_BUTTON.addEventListener('click', () => {
+    LOWER_MAIN_SECTION.innerHTML = '';
 
-        const LOWER_MAIN_SECTION = document.querySelector('.lower-content');
+    const FORM = document.createElement('form');
 
-        const FORM = document.createElement('form');
-
-        FORM.innerHTML = `
-        <form>
-            <input type="text" name="title" id="title" placeholder="Task name">
-            <input type="text" name="description" id="description" placeholder="Description">
-            <fieldset class="interactive-inputs">
-                <div class="due-date-input">
-                    <legend>Due date:</legend>
-                    <input type="date" name="dueDate" id="dueDate">
-                </div>
-                <div class="priority-input">
-                    <legend>Priority</legend>
-                    <select name="priority" id="priority">
-                        <option value="High">High</option>
-                        <option value="Medium">Medium</option>
-                        <option value="Low">Low</option>
-                    </select>   
-                </div>
-            </fieldset>
-            <hr>
-            <div class="lower-form">
-                <div class="current-project-display"></div>
-                <div class="buttons-area">
-                    <button class="interactive-button" id="cancel-button">Cancel</button>
-                    <button class="interactive-button" id="add-todo-button">Add task</button>    
-                </div>
+    FORM.innerHTML = `
+    <form>
+        <input type="text" name="title" id="title" placeholder="Task name">
+        <input type="text" name="description" id="description" placeholder="Description">
+        <fieldset class="interactive-inputs">
+            <div class="due-date-input">
+                <legend>Due date:</legend>
+                <input type="date" name="dueDate" id="dueDate">
             </div>
-        </form>
-        `;
+            <div class="priority-input">
+                <legend>Priority</legend>
+                <select name="priority" id="priority">
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>   
+            </div>
+        </fieldset>
+        <hr>
+        <div class="lower-form">
+            <div class="current-project-display"></div>
+            <div class="buttons-area">
+                <button class="interactive-button" id="cancel-button">Cancel</button>
+                <button class="interactive-button" id="add-todo-button">Add task</button>    
+            </div>
+        </div>
+    </form>
+    `;
 
-        LOWER_MAIN_SECTION.appendChild(FORM);
+    LOWER_MAIN_SECTION.appendChild(FORM);
 
-        FORM.classList.add('todo-form');
+    FORM.classList.add('todo-form');
 
-    });
+    HANDLE_TODO_SUBMIT(FORM);
 
 };
 
