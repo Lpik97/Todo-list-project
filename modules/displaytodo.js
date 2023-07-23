@@ -1,20 +1,26 @@
-import PROJECTS_ARRAY from "./projectsarray.js";
+import OPEN_TODO from "./opentodo";
 
 const DISPLAY_TODO = () => {
 
-    const TODOS_SECTION = document.querySelector('.upper-content');
+    const TODOS_LIST = document.querySelector('.upper-content');
 
-    TODOS_SECTION.innerHTML = '';
+    TODOS_LIST.innerHTML = '';
 
-    const PROJECT = PROJECTS_ARRAY.PROJECTS[INDEX];
-
-    PROJECT.TODOS.forEach((TODO) => {
+    TODOS_LIST.forEach(TODO => {
 
         const TODO_ELEMENT = document.createElement('div');
 
         TODO_ELEMENT.innerText = TODO.title;
 
-        TODOS_SECTION.appendChild(TODO_ELEMENT);
+        TODOS_LIST.appendChild(TODO_ELEMENT);
+
+        TODO_ELEMENT.classList.add('todo');
+
+        TODO_ELEMENT.addEventListener('click', () => {
+
+            OPEN_TODO(TODO);
+
+        });
 
     });
 
