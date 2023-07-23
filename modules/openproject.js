@@ -21,8 +21,6 @@ const OPEN_PROJECT = (PROJECT) => {
         <h1 class="add-todo-h1">Create a <em>new</em> task</h1>
         `;
 
-        ADD_TODO.classList.add('add-todo');
-
         FORM_SECTION.appendChild(ADD_TODO);
 
         ADD_TODO.addEventListener('click', () => {
