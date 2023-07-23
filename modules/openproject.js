@@ -4,11 +4,13 @@ const OPEN_PROJECT = (PROJECT) => {
 
     const TODOS_SECTION = document.querySelector('.upper-content');
 
+    const FORM_SECTION = document.querySelector('.lower-content');
+
+    FORM_SECTION.innerHTML = '';
+
     TODOS_SECTION.innerHTML = PROJECT.TODOS.toString();
 
-    if (PROJECT.TODOS.lenght <= 15) {
-
-        const FORM_SECTION = document.querySelector('.lower-content');
+    if (PROJECT.TODOS.length <= 15) {
 
         const ADD_TODO = document.createElement('div');
 
