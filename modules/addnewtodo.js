@@ -1,8 +1,24 @@
-const ADD_NEW_TODO = (PROJECT, TODO) => {
+import PROJECTS_ARRAY from "./projectsarray.js";
 
-    const TODOS_ARRAY = PROJECT.TODOS;
+const ADD_NEW_TODO = (TODO) => {
 
-    TODOS_ARRAY.push(TODO);
+    const PROJECT = document.getElementById('selected');
+
+    if (PROJECT) {
+
+        const CURRENT_PROJECT_INDEX = PROJECTS_ARRAY.findIndex(
+
+            (PROJECT) => PROJECT.title === PROJECT.innerText
+
+        );
+        
+        if (CURRENT_PROJECT_INDEX !== -1) {
+
+            PROJECTS_ARRAY[CURRENT_PROJECT_INDEX].TODOS.push(TODO);
+
+        };
+
+    };
 
 };
 
