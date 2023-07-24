@@ -1,5 +1,6 @@
 import PROJECTS_ARRAY from "./projectsarray.js";
 import OPEN_PROJECT from "./openproject.js";
+import SET_CURRENT_PROJECT from "./setcurrentproject.js";
 
 const DISPLAY_PROJECT = () => {
 
@@ -18,6 +19,8 @@ const DISPLAY_PROJECT = () => {
         PROJECT_ELEMENT.classList.add('project')
 
         PROJECT_ELEMENT.addEventListener('click', () => {
+
+            SET_CURRENT_PROJECT();
 
             OPEN_PROJECT(PROJECT);
 
