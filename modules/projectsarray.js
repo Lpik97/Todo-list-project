@@ -1,3 +1,3 @@
-const PROJECTS_ARRAY =  [];
+let ProjectsArray =  [];
 
-export default PROJECTS_ARRAY;
+export default ProjectsArray;
