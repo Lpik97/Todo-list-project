@@ -1,41 +1,26 @@
-import ProjectsArray from "./projectsarray.js";
+import PROJECTS_ARRAY from "./projectsarray.js";
 import OPEN_PROJECT from "./openproject.js";
-import save from "./save.js";
-import selectedProjectId from "./selectedprojectid.js";
+import SET_CURRENT_PROJECT from "./setcurrentproject.js";
 
 const DISPLAY_PROJECT = () => {
 
-    const CREATED_PROJECTS = document.querySelector('[data-created-projects]');
+    const CREATED_PROJECTS = document.getElementById('created-projects');
 
     CREATED_PROJECTS.innerHTML = '';
 
-    ProjectsArray.forEach(PROJECT => {
+    PROJECTS_ARRAY.forEach(PROJECT => {
 
         const PROJECT_ELEMENT = document.createElement('li');
 
-        PROJECT_ELEMENT.dataset.projectState = PROJECT.state;
-
         PROJECT_ELEMENT.innerText = PROJECT.title;
-
-        PROJECT_ELEMENT.classList.add('project');
 
         CREATED_PROJECTS.appendChild(PROJECT_ELEMENT);
 
-        CREATED_PROJECTS.addEventListener('click', e => {
+        PROJECT_ELEMENT.classList.add('project')
 
-            if (e.target.tagName.toLowerCase() === 'li') {
-                
-                selectedProjectId = e.target.dataset.projectId;
+        PROJECT_ELEMENT.addEventListener('click', () => {
 
-                save();
-
-            };
-
-            if (PROJECT.id === selectedProjectId) {
-
-                PROJECT_ELEMENT.classList.add('active-project');
-    
-            };
+            SET_CURRENT_PROJECT();
 
             OPEN_PROJECT(PROJECT);
 

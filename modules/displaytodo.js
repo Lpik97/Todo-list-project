@@ -1,16 +1,14 @@
-import OPEN_TODO from "./opentodo.js";
+import OPEN_TODO from "./opentodo";
 
-const DISPLAY_TODO = (PROJECT) => {
+const DISPLAY_TODO = () => {
 
     const TODOS_LIST = document.querySelector('.upper-content');
 
-    const TODOS_ARRAY = PROJECT.TODOS;
-
     TODOS_LIST.innerHTML = '';
 
-    TODOS_ARRAY.forEach((TODO) => {
+    TODOS_LIST.forEach(TODO => {
 
-        const TODO_ELEMENT = document.createElement('li');
+        const TODO_ELEMENT = document.createElement('div');
 
         TODO_ELEMENT.innerText = TODO.title;
 

@@ -1,3 +1,0 @@
-const LOCAL_STORAGE_SELECTED_PROJECTS_ID_KEY = 'todos.selectedProjectId';
-
-export default LOCAL_STORAGE_SELECTED_PROJECTS_ID_KEY;
