@@ -20,9 +20,7 @@ const DISPLAY_PROJECT = () => {
 
         PROJECT_ELEMENT.addEventListener('click', () => {
 
-            SET_CURRENT_PROJECT();
-
-            OPEN_PROJECT(PROJECT);
+            OPEN_PROJECT();
 
         });
 
