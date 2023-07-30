@@ -16,11 +16,13 @@ function HANDLE_TODO_SUBMIT(FORM) {
 
         const TODO_PRIORITY = FORM.querySelector('#priority').value;
 
+        const PROJECT = document.getElementById('selected');
+
         const TODO = TODO_FACTORY(TODO_TITLE, TODO_DESCRIPTION, TODO_DUE_DATE, TODO_PRIORITY);
 
         ADD_NEW_TODO(TODO);
 
-        DISPLAY_TODO();
+        DISPLAY_TODO(PROJECT);
 
     });
 
