@@ -1,5 +1,3 @@
-import OPEN_TODO from "./opentodo";
-
 const DISPLAY_TODO = () => {
 
     const TODOS_LIST = document.querySelector('.upper-content');
@@ -17,8 +15,6 @@ const DISPLAY_TODO = () => {
         TODO_ELEMENT.classList.add('todo');
 
         TODO_ELEMENT.addEventListener('click', () => {
-
-            OPEN_TODO(TODO);
 
         });
 
