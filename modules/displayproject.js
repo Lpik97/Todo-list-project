@@ -13,13 +13,19 @@ const DISPLAY_PROJECT = () => {
 
         PROJECT_ELEMENT.innerText = PROJECT.title;
 
+        PROJECT_ELEMENT.setAttribute('data-project-id', PROJECT.id);
+
         CREATED_PROJECTS.appendChild(PROJECT_ELEMENT);
 
         PROJECT_ELEMENT.classList.add('project')
 
         PROJECT_ELEMENT.addEventListener('click', () => {
 
-            OPEN_PROJECT();
+            const PROJECT_ELEMENT_ID = PROJECT_ELEMENT.getAttribute('data-project-id');
+
+            const SELECTED_PROJECT = PROJECTS_ARRAY.find(PROJECT => PROJECT.id === PROJECT_ELEMENT_ID);
+
+            OPEN_PROJECT(SELECTED_PROJECT);
 
         });
 
