@@ -2,9 +2,9 @@ import HANDLE_TODO_SUBMIT from "./handletodosubmit.js";
 
 const TODO_FORM = () => {
 
-    const LOWER_MAIN_SECTION = document.querySelector('.lower-content');
+    const FORM_SECTION = document.querySelector('.lower-content');
 
-    LOWER_MAIN_SECTION.innerHTML = '';
+    FORM_SECTION.innerHTML = '';
 
     const FORM = document.createElement('form');
 
@@ -37,7 +37,7 @@ const TODO_FORM = () => {
     </form>
     `;
 
-    LOWER_MAIN_SECTION.appendChild(FORM);
+    FORM_SECTION.appendChild(FORM);
 
     FORM.classList.add('todo-form');
 
