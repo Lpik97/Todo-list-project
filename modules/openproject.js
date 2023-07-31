@@ -1,6 +1,6 @@
 import TODO_FORM from "./todoform.js";
 
-const OPEN_PROJECT = (PROJECT) => {
+const OPEN_PROJECT = (SELECTED_PROJECT) => {
 
     const TODOS_SECTION = document.querySelector('.upper-content');
 
@@ -8,9 +8,9 @@ const OPEN_PROJECT = (PROJECT) => {
 
     FORM_SECTION.innerHTML = '';
 
-    TODOS_SECTION.innerHTML = PROJECT.TODOS.toString();
+    TODOS_SECTION.innerHTML = SELECTED_PROJECT.TODOS.toString();
 
-    if (PROJECT.TODOS.length <= 15) {
+    if (SELECTED_PROJECT.TODOS.length <= 15) {
 
         const ADD_TODO = document.createElement('div');
 
