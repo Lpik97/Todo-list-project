@@ -1,6 +1,5 @@
 import PROJECTS_ARRAY from "./projectsarray.js";
 import OPEN_PROJECT from "./openproject.js";
-import SET_CURRENT_PROJECT from "./setcurrentproject.js";
 
 const DISPLAY_PROJECT = () => {
 
