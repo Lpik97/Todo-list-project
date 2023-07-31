@@ -27,7 +27,7 @@ const OPEN_PROJECT = (SELECTED_PROJECT) => {
 
         ADD_TODO.addEventListener('click', () => {
 
-            TODO_FORM();
+            TODO_FORM(SELECTED_PROJECT);
 
         });
 
