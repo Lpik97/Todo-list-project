@@ -1,3 +1,4 @@
+import CLEAN_CONTENT from "./cleancontent.js";
 import HANDLE_PROJECT_SUBMIT from "./handleprojectsubmit.js";
 
 const PROJECT_FORM = () => {
@@ -5,6 +6,8 @@ const PROJECT_FORM = () => {
     const ADD_PROJECT = document.getElementById('add-project');
 
     ADD_PROJECT.addEventListener('click', () => {
+
+        CLEAN_CONTENT();
 
         const LOWER_CONTENT = document.querySelector('.lower-content');
 
