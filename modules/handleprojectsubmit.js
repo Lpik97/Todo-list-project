@@ -10,9 +10,9 @@ function HANDLE_PROJECT_SUBMIT (FORM) {
 
         const PROJECT_TITLE = FORM.querySelector('#title').value;
 
-        const NEW_PROJECT = PROJECT_FACTORY(PROJECT_TITLE);
+        const PROJECT = PROJECT_FACTORY(PROJECT_TITLE);
 
-        ADD_NEW_PROJECT(NEW_PROJECT);
+        ADD_NEW_PROJECT(PROJECT);
 
         DISPLAY_PROJECT();
         
