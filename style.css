@@ -206,3 +206,29 @@ footer {
     display: flex;
     justify-content: flex-end;
 }
+
+.add-todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-todo-div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-todo-button {
+    cursor: pointer;
+    border: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: rgb(253, 253, 253);
+    transition: border .2s ease-in-out, background-color .2s ease-in-out;
+}
+
+.add-todo-button:hover {
+    background-color: rgb(245, 245, 245);
+}
