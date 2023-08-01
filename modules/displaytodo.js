@@ -10,7 +10,7 @@ const DISPLAY_TODO = (SELECTED_PROJECT) => {
 
         TODO_ELEMENT.innerText = TODO.title;
 
-        TODO_ELEMENT.setAttribute('data-project-id', TODO.id);
+        TODO_ELEMENT.setAttribute('data-todo-id', TODO.id);
 
         TODOS_LIST.appendChild(TODO_ELEMENT);
 
