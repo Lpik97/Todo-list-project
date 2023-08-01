@@ -1,8 +1,7 @@
-import ADD_NEW_TODO from "./addnewtodo.js";
 import DISPLAY_TODO from "./displaytodo.js";
 import TODO_FACTORY from "./todofactory.js";
 
-function HANDLE_TODO_SUBMIT(FORM) {
+function HANDLE_TODO_SUBMIT(FORM, SELECTED_PROJECT) {
 
     FORM.addEventListener('submit', (event) => {
         
@@ -18,9 +17,11 @@ function HANDLE_TODO_SUBMIT(FORM) {
 
         const TODO = TODO_FACTORY(TODO_TITLE, TODO_DESCRIPTION, TODO_DUE_DATE, TODO_PRIORITY);
 
-        ADD_NEW_TODO(TODO);
+        SELECTED_PROJECT.TODOS.push(TODO);
 
-        DISPLAY_TODO();
+        console.log("Updated Project:", SELECTED_PROJECT);
+
+        DISPLAY_TODO(SELECTED_PROJECT);
 
     });
 
