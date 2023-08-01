@@ -232,3 +232,13 @@ footer {
 .add-todo-button:hover {
     background-color: rgb(245, 245, 245);
 }
+
+.todo {
+    padding: 1%;
+    margin-bottom: 5px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(193, 193, 193);
+    cursor: pointer;
+}
