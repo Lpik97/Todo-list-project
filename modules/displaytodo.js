@@ -1,3 +1,5 @@
+import OPEN_TODO from "./opentodo.js";
+
 const DISPLAY_TODO = (SELECTED_PROJECT) => {
 
     const TODOS_LIST = document.querySelector('.upper-content');
