@@ -7,21 +7,29 @@ function HANDLE_TODO_SUBMIT(FORM, SELECTED_PROJECT) {
         
         event.preventDefault();
 
-        const TODO_TITLE = FORM.querySelector('#title').value;
+        if (SELECTED_PROJECT.TODOS.length >= 15) {
 
-        const TODO_DESCRIPTION = FORM.querySelector('#description').value;
+            return;
 
-        const TODO_DUE_DATE = FORM.querySelector('#dueDate').value;
+        } else {
 
-        const TODO_PRIORITY = FORM.querySelector('#priority').value;
+            const TODO_TITLE = FORM.querySelector('#title').value;
+    
+            const TODO_DESCRIPTION = FORM.querySelector('#description').value;
+    
+            const TODO_DUE_DATE = FORM.querySelector('#dueDate').value;
+    
+            const TODO_PRIORITY = FORM.querySelector('#priority').value;
+    
+            const TODO = TODO_FACTORY(TODO_TITLE, TODO_DESCRIPTION, TODO_DUE_DATE, TODO_PRIORITY);
+    
+            SELECTED_PROJECT.TODOS.push(TODO);
+    
+            console.log("Updated Project:", SELECTED_PROJECT);
+    
+            DISPLAY_TODO(SELECTED_PROJECT);
 
-        const TODO = TODO_FACTORY(TODO_TITLE, TODO_DESCRIPTION, TODO_DUE_DATE, TODO_PRIORITY);
-
-        SELECTED_PROJECT.TODOS.push(TODO);
-
-        console.log("Updated Project:", SELECTED_PROJECT);
-
-        DISPLAY_TODO(SELECTED_PROJECT);
+        };
 
     });
 
