@@ -10,7 +10,11 @@ const OPEN_PROJECT = (SELECTED_PROJECT) => {
 
     TODOS_SECTION.innerHTML = SELECTED_PROJECT.TODOS.toString();
 
-    if (SELECTED_PROJECT.TODOS.length <= 15) {
+    if (SELECTED_PROJECT.TODOS.length >= 15) {
+
+        return;
+
+    } else {
 
         const ADD_TODO = document.createElement('div');
 
@@ -31,11 +35,7 @@ const OPEN_PROJECT = (SELECTED_PROJECT) => {
 
         });
 
-    } else {
-
-        return;
-
-    }
+    };
 
 };
 
