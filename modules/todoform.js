@@ -1,6 +1,6 @@
 import HANDLE_TODO_SUBMIT from "./handletodosubmit.js";
 
-const TODO_FORM = () => {
+const TODO_FORM = (SELECTED_PROJECT) => {
 
     const FORM_SECTION = document.querySelector('.lower-content');
 
@@ -41,7 +41,7 @@ const TODO_FORM = () => {
 
     FORM.classList.add('todo-form');
 
-    HANDLE_TODO_SUBMIT(FORM);
+    HANDLE_TODO_SUBMIT(FORM, SELECTED_PROJECT);
 
 };
 
