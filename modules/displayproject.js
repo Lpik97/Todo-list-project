@@ -17,7 +17,7 @@ const DISPLAY_PROJECT = () => {
 
         CREATED_PROJECTS.appendChild(PROJECT_ELEMENT);
 
-        PROJECT_ELEMENT.classList.add('project')
+        PROJECT_ELEMENT.classList.add('project');
 
         PROJECT_ELEMENT.addEventListener('click', () => {
 
