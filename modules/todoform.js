@@ -28,7 +28,7 @@ const TODO_FORM = (SELECTED_PROJECT) => {
         </fieldset>
         <hr>
         <div class="lower-form">
-            <div class="current-project-display"></div>
+            <div class="current-project-display">${SELECTED_PROJECT.title}</div>
             <div class="buttons-area">
                 <button class="interactive-button" id="cancel-button">Cancel</button>
                 <button class="interactive-button" id="add-todo-button">Add task</button>    
