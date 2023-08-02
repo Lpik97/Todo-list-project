@@ -60,6 +60,7 @@ nav {
 
 .project {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 5%;
     cursor: pointer;
@@ -237,6 +238,7 @@ footer {
 
 .todo {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 1%;
     margin-bottom: 5px;
@@ -245,4 +247,8 @@ footer {
     border-radius: 10px;
     border: 1px solid rgb(193, 193, 193);
     cursor: pointer;
+}
+
+#delete-button {
+    display: flex;
 }
