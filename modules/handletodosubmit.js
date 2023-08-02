@@ -24,9 +24,7 @@ function HANDLE_TODO_SUBMIT(FORM, SELECTED_PROJECT) {
             const TODO = TODO_FACTORY(TODO_TITLE, TODO_DESCRIPTION, TODO_DUE_DATE, TODO_PRIORITY);
     
             SELECTED_PROJECT.TODOS.push(TODO);
-    
-            console.log("Updated Project:", SELECTED_PROJECT);
-    
+        
             DISPLAY_TODO(SELECTED_PROJECT);
 
         };
