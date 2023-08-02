@@ -1,4 +1,5 @@
 import TODO_FORM from "./todoform.js";
+import DISPLAY_TODO from "./displaytodo.js";
 
 const OPEN_PROJECT = (SELECTED_PROJECT) => {
 
@@ -8,7 +9,9 @@ const OPEN_PROJECT = (SELECTED_PROJECT) => {
 
     FORM_SECTION.innerHTML = '';
 
-    TODOS_SECTION.innerHTML = SELECTED_PROJECT.TODOS.toString();
+    TODOS_SECTION.innerHTML = '';
+
+    DISPLAY_TODO(SELECTED_PROJECT); 
 
     if (SELECTED_PROJECT.TODOS.length >= 15) {
 
