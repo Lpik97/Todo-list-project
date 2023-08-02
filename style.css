@@ -59,6 +59,8 @@ nav {
 }
 
 .project {
+    display: flex;
+    align-items: center;
     padding: 5%;
     cursor: pointer;
 }
@@ -234,6 +236,8 @@ footer {
 }
 
 .todo {
+    display: flex;
+    align-items: center;
     padding: 1%;
     margin-bottom: 5px;
     -webkit-border-radius: 10px;
