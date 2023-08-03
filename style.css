@@ -255,3 +255,11 @@ footer {
 #delete-button {
     display: flex;
 }
+
+#high-priority-todo {
+    background-color: rgb(239, 120, 111);
+}
+
+#medium-priority-todo {
+    background-color: rgb(244, 179, 174);
+}
