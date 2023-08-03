@@ -1,3 +1,4 @@
+import APPLY_PRIORITY from "./applypriority.js";
 import DELETE_TODO from "./deletetodo.js";
 import OPEN_TODO from "./opentodo.js";
 
@@ -25,6 +26,8 @@ const DISPLAY_TODO = (SELECTED_PROJECT) => {
         TODOS_LIST.appendChild(TODO_ELEMENT);
 
         TODO_ELEMENT.classList.add('todo');
+
+        APPLY_PRIORITY(TODO, TODO_ELEMENT);
 
         DELETE_TODO(SELECTED_PROJECT, TODO_ELEMENT);
 
