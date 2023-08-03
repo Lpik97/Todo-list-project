@@ -1,5 +1,5 @@
-import LOCAL_STORAGE_PROJECTS_KEY from "./localstorage.js";
+import LOCAL_STORAGE_PROJECT_KEY from "./localstorage.js"
 
-let projectsArray = JSON.parse(localStorage.getItem(LOCAL_STORAGE_PROJECTS_KEY)) || [];
+let projectsArray = JSON.parse(localStorage.getItem(LOCAL_STORAGE_PROJECT_KEY)) || [];
 
 export default projectsArray;
