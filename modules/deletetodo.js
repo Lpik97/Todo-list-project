@@ -1,7 +1,9 @@
+import CLEAN_CONTENT from "./cleancontent.js";
+import DISPLAY_TODO from "./displaytodo.js";
+
 const DELETE_TODO = (SELECTED_PROJECT) => {
 
     const TODOS_LIST = document.querySelector('.upper-content');
-
 
     TODOS_LIST.addEventListener('click', (event) => {
 
@@ -24,6 +26,10 @@ const DELETE_TODO = (SELECTED_PROJECT) => {
             };
 
             TODO_ELEMENT.remove();
+
+            CLEAN_CONTENT();
+
+            DISPLAY_TODO(SELECTED_PROJECT);
 
         };
 
