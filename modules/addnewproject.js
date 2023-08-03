@@ -1,8 +1,11 @@
-import PROJECTS_ARRAY from "./projectsarray.js"
+import projectsArray from "./projectsarray.js"
+import LOCAL_STORAGE_PROJECT_KEY from "./localstorage.js";
 
 const ADD_NEW_PROJECT = (PROJECT) => {
 
-    PROJECTS_ARRAY.push(PROJECT);
+    projectsArray.push(PROJECT);
+
+    localStorage.setItem(LOCAL_STORAGE_PROJECT_KEY, JSON.stringify(projectsArray));
 
 };
 
