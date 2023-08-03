@@ -203,7 +203,8 @@ footer {
     background-color: rgb(226, 226, 226);
 }
 
-.project-form hr {
+.project-form hr,
+.expanded-todo hr {
     width: 100%;
     margin-bottom: 15px;
 }
@@ -262,4 +263,37 @@ footer {
 
 #medium-priority-todo {
     background-color: rgb(244, 179, 174);
+}
+
+.expanded-todo {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(193, 193, 193);
+}
+
+.expanded-todo-upper-container,
+.expanded-todo-bottom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.expanded-todo-bottom-container {
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.expanded-todo-title {
+    font-weight: 600;
+    font-size: 2vw;
+    font-style: italic;
+}
+
+.expanded-todo-description {
+    font-size: 1.2vw;
+    margin-bottom: 30px;
 }
