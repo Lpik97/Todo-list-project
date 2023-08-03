@@ -1,3 +1,3 @@
-const LOCAL_STORAGE_PROJECTS_KEY = 'todo.projects';
+const LOCAL_STORAGE_PROJECT_KEY = 'projects.list';
 
-export default LOCAL_STORAGE_PROJECTS_KEY;
+export default LOCAL_STORAGE_PROJECT_KEY;
