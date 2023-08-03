@@ -1,6 +1,7 @@
 import CLEAN_CONTENT from "./cleancontent.js";
+import TODO_EDIT from "./todoedit.js";
 
-const OPEN_TODO = (SELECTED_TODO) => {
+const OPEN_TODO = (SELECTED_TODO, SELECTED_PROJECT) => {
 
     CLEAN_CONTENT();
 
@@ -29,6 +30,8 @@ const OPEN_TODO = (SELECTED_TODO) => {
     `;
 
     UPPER_CONTENT.appendChild(EXPANDED_TODO);
+
+    TODO_EDIT(EXPANDED_TODO, SELECTED_TODO, SELECTED_PROJECT);
 
 };
 
