@@ -37,7 +37,7 @@ const DISPLAY_TODO = (SELECTED_PROJECT) => {
 
             const SELECTED_TODO = SELECTED_PROJECT.TODOS.find(TODO => TODO.id === TODO_ELEMENT_ID);
 
-            OPEN_TODO(SELECTED_TODO);
+            OPEN_TODO(SELECTED_TODO, SELECTED_PROJECT);
 
         });
 
