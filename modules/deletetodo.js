@@ -1,5 +1,4 @@
-import CLEAN_CONTENT from "./cleancontent.js";
-import DISPLAY_TODO from "./displaytodo.js";
+import OPEN_PROJECT from "./openproject.js";
 import UPDATE_PROJECTS from "./updateprojects.js";
 
 const DELETE_TODO = (SELECTED_PROJECT) => {
@@ -30,9 +29,7 @@ const DELETE_TODO = (SELECTED_PROJECT) => {
 
             TODO_ELEMENT.remove();
 
-            CLEAN_CONTENT();
-
-            DISPLAY_TODO(SELECTED_PROJECT);
+            OPEN_PROJECT(SELECTED_PROJECT);
 
         };
 
