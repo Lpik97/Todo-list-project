@@ -1,15 +1,12 @@
 import TODO_FORM from "./todoform.js";
 import DISPLAY_TODO from "./displaytodo.js";
+import CLEAN_CONTENT from "./cleancontent.js";
 
 const OPEN_PROJECT = (SELECTED_PROJECT) => {
 
-    const TODOS_SECTION = document.querySelector('.upper-content');
-
     const FORM_SECTION = document.querySelector('.lower-content');
 
-    FORM_SECTION.innerHTML = '';
-
-    TODOS_SECTION.innerHTML = '';
+    CLEAN_CONTENT();
 
     DISPLAY_TODO(SELECTED_PROJECT); 
 
