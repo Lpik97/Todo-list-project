@@ -2,15 +2,15 @@ import CLEAN_CONTENT from "./cleancontent.js";
 import OPEN_TODO from "./opentodo.js";
 import UPDATE_PROJECTS from "./updateprojects.js";
 
-const TODO_EDIT = (EXPANDED_TODO, SELECTED_TODO, SELECTED_PROJECT) => {
+const TODO_EDIT = (EXPANDED_TODO, SELECTED_TODO, SELECTED_PROJECT) => { 
 
-    const EDIT_EXPANDED_BUTTON = EXPANDED_TODO.querySelector('#edit-expanded-todo');
+    const EDIT_EXPANDED_BUTTON = EXPANDED_TODO.querySelector('#edit-expanded-todo-button');
 
     EDIT_EXPANDED_BUTTON.addEventListener('click', () => {
 
-        const FORM_SECTION = document.querySelector('.lower-content');
-
         CLEAN_CONTENT();
+
+        const FORM_SECTION = document.querySelector('.lower-content');
 
         const FORM = document.createElement('form');
 
