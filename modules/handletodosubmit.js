@@ -27,6 +27,8 @@ function HANDLE_TODO_SUBMIT(FORM, SELECTED_PROJECT) {
             SELECTED_PROJECT.TODOS.push(TODO);
 
             UPDATE_PROJECTS();
+
+            FORM.reset();
         
             DISPLAY_TODO(SELECTED_PROJECT);
 

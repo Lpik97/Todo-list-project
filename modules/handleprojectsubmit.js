@@ -14,6 +14,8 @@ function HANDLE_PROJECT_SUBMIT (FORM) {
 
         ADD_NEW_PROJECT(PROJECT);
 
+        FORM.reset();
+
         DISPLAY_PROJECT();
         
     });
