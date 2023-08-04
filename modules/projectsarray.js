@@ -1,4 +1,4 @@
-import LOCAL_STORAGE_PROJECT_KEY from "./localstorage.js"
+import LOCAL_STORAGE_PROJECT_KEY from "./projectslocalstorage.js"
 
 let projectsArray = JSON.parse(localStorage.getItem(LOCAL_STORAGE_PROJECT_KEY)) || [];
 
