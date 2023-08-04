@@ -1,5 +1,6 @@
 import CLEAN_CONTENT from "./cleancontent.js";
 import OPEN_TODO from "./opentodo.js";
+import UPDATE_PROJECTS from "./updateprojects.js";
 
 const TODO_EDIT = (EXPANDED_TODO, SELECTED_TODO, SELECTED_PROJECT) => {
 
@@ -57,6 +58,8 @@ const TODO_EDIT = (EXPANDED_TODO, SELECTED_TODO, SELECTED_PROJECT) => {
             SELECTED_TODO.dueDate = FORM.querySelector('#dueDate').value;
 
             SELECTED_TODO.priority = FORM.querySelector('#priority').value;
+
+            UPDATE_PROJECTS();
 
             CLEAN_CONTENT();
 

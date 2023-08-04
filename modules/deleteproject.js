@@ -1,5 +1,6 @@
 import CLEAN_CONTENT from "./cleancontent.js";
-import ProjectsArray from "./projectsarray.js";
+import projectsArray from "./projectsarray.js";
+import UPDATE_PROJECTS from "./updateprojects.js";
 
 const DELETE_PROJECT = () => {
     
@@ -15,13 +16,15 @@ const DELETE_PROJECT = () => {
 
             const PARENT_ELEMENT_ID = PROJECT_ELEMENT.getAttribute('data-project-id');
 
-            const PROJECT_OBJECT = ProjectsArray.find(TODO => TODO.id === PARENT_ELEMENT_ID);
+            const PROJECT_OBJECT = projectsArray.find(TODO => TODO.id === PARENT_ELEMENT_ID);
 
-            const PROJECT_OBJECT_INDEX = ProjectsArray.indexOf(PROJECT_OBJECT);
+            const PROJECT_OBJECT_INDEX = projectsArray.indexOf(PROJECT_OBJECT);
 
             if (PROJECT_OBJECT_INDEX !== -1) {
 
-                ProjectsArray.splice(PROJECT_OBJECT_INDEX, 1);
+                projectsArray.splice(PROJECT_OBJECT_INDEX, 1);
+
+                UPDATE_PROJECTS();
 
             };
 

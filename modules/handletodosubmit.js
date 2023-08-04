@@ -1,5 +1,6 @@
 import DISPLAY_TODO from "./displaytodo.js";
 import TODO_FACTORY from "./todofactory.js";
+import UPDATE_PROJECTS from "./updateprojects.js";
 
 function HANDLE_TODO_SUBMIT(FORM, SELECTED_PROJECT) {
 
@@ -24,6 +25,8 @@ function HANDLE_TODO_SUBMIT(FORM, SELECTED_PROJECT) {
             const TODO = TODO_FACTORY(TODO_TITLE, TODO_DESCRIPTION, TODO_DUE_DATE, TODO_PRIORITY);
     
             SELECTED_PROJECT.TODOS.push(TODO);
+
+            UPDATE_PROJECTS();
         
             DISPLAY_TODO(SELECTED_PROJECT);
 

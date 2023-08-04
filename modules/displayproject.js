@@ -1,6 +1,7 @@
-import PROJECTS_ARRAY from "./projectsarray.js";
+import projectsArray from "./projectsarray.js";
 import OPEN_PROJECT from "./openproject.js";
 import DELETE_PROJECT from "./deleteproject.js";
+import UPDATE_PROJECTS from "./updateprojects.js";
 
 const DISPLAY_PROJECT = () => {
 
@@ -8,7 +9,7 @@ const DISPLAY_PROJECT = () => {
 
     CREATED_PROJECTS.innerHTML = '';
 
-    PROJECTS_ARRAY.forEach(PROJECT => {
+    projectsArray.forEach(PROJECT => {
 
         const PROJECT_ELEMENT = document.createElement('li');
 
@@ -27,13 +28,15 @@ const DISPLAY_PROJECT = () => {
 
         PROJECT_ELEMENT.classList.add('project');
 
+        UPDATE_PROJECTS();
+
         DELETE_PROJECT();
 
         PROJECT_ELEMENT.addEventListener('click', () => {
 
             const PROJECT_ELEMENT_ID = PROJECT_ELEMENT.getAttribute('data-project-id');
 
-            const SELECTED_PROJECT = PROJECTS_ARRAY.find(PROJECT => PROJECT.id === PROJECT_ELEMENT_ID);
+            const SELECTED_PROJECT = projectsArray.find(PROJECT => PROJECT.id === PROJECT_ELEMENT_ID);
 
             OPEN_PROJECT(SELECTED_PROJECT);
 

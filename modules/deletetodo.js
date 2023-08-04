@@ -1,5 +1,6 @@
 import CLEAN_CONTENT from "./cleancontent.js";
 import DISPLAY_TODO from "./displaytodo.js";
+import UPDATE_PROJECTS from "./updateprojects.js";
 
 const DELETE_TODO = (SELECTED_PROJECT) => {
 
@@ -22,6 +23,8 @@ const DELETE_TODO = (SELECTED_PROJECT) => {
             if (TODO_OBJECT_INDEX !== -1) {
 
                 SELECTED_PROJECT.TODOS.splice(TODO_OBJECT_INDEX, 1);
+
+                UPDATE_PROJECTS();
 
             };
 
