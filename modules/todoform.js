@@ -1,3 +1,4 @@
+import CANCEL_FORM from "./cancelform.js";
 import HANDLE_TODO_SUBMIT from "./handletodosubmit.js";
 
 const TODO_FORM = (SELECTED_PROJECT) => {
@@ -40,6 +41,8 @@ const TODO_FORM = (SELECTED_PROJECT) => {
     FORM_SECTION.appendChild(FORM);
 
     FORM.classList.add('todo-form');
+
+    CANCEL_FORM(FORM);
 
     HANDLE_TODO_SUBMIT(FORM, SELECTED_PROJECT);
 

@@ -1,3 +1,4 @@
+import CANCEL_FORM from "./cancelform.js";
 import CLEAN_CONTENT from "./cleancontent.js";
 import HANDLE_PROJECT_SUBMIT from "./handleprojectsubmit.js";
 
@@ -29,6 +30,8 @@ const PROJECT_FORM = () => {
         LOWER_CONTENT.appendChild(FORM);
 
         FORM.classList.add('project-form');
+
+        CANCEL_FORM(FORM);
 
         HANDLE_PROJECT_SUBMIT(FORM);
 
