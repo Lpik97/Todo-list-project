@@ -195,8 +195,8 @@ footer {
 #add-todo-button,
 #add-project-button {
     color: white;
-    cursor: not-allowed;
-    background-color: rgb(242, 162, 155);
+    cursor: pointer;
+    background-color: rgb(219, 76, 63);
 }
 
 #cancel-button {
